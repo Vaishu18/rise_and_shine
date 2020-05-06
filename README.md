@@ -26,6 +26,7 @@ Each row is considered a floor access event. Your task it to output each floor a
 You may use any programming language. When finished, upload code to your Github account and send us the link. Please include instructions on how to execute and test code. Good luck!
 
 **Solution**
+
 To run the program to parse the data you need the following external packages:
 pandas
 jsonschema
