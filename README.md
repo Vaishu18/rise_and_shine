@@ -32,7 +32,7 @@ pandas
 jsonschema
 
 Command to execute:
-python data_parse.py <csv filepath> <schema filepath>
+**python data_parse.py <csv filepath> <schema filepath>**
 
 The output will be displayed on the terminal console.
 
