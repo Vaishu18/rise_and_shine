@@ -13,17 +13,27 @@
 -- (11, 'GFF', 400),
 -- (12, 'HQE', 300);
 
-with result as (
 select
-  *,
-  row_number() over(partition by cnt) pnt
+  id,
+  event_name,
+  people_count
 from
   (
     select
-      E.*,
-      (case when people_count >= 100 then 1 else 0 end) as cnt
+      *,
+      count(1) over (partition by cnt) as num100
     from
-      event E
-  ) t1
+      (
+        select
+          *,
+          sum(case when people_count >= 100 then 0 else 1 end) over (
+            order by
+              id
+          ) as cnt
+        from
+          event
+      )
   )
-select result.* from result where result.pnt>=3 and result.cnt!=0
+where
+  (num100 -1) >= 3
+  and people_count >= 100
