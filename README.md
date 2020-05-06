@@ -11,7 +11,7 @@ One Championship conducts events in a stadium, each event many people visit it a
 Take leverage in adding sample data yourself.
 Please write a query to display the records which have 3 or more consecutive events and the amount of people more than 100(inclusive).
 
-*Solution*
+**Solution**
 
 *solution_sql.sql* contains the answer for this
 
@@ -25,7 +25,7 @@ Each row is considered a floor access event. Your task it to output each floor a
 
 You may use any programming language. When finished, upload code to your Github account and send us the link. Please include instructions on how to execute and test code. Good luck!
 
-*Solution*
+**Solution**
 To run the program to parse the data you need the following external packages:
 pandas
 jsonschema
