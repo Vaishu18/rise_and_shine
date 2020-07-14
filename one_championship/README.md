@@ -2,7 +2,6 @@ The project one_championship contains the following two files
 1. solution_sql.sql 
 2. data_parse.py
 
-
 Problem statements
 1. SQL: 
 
