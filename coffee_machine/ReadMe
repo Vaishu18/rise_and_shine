@@ -1,0 +1,5 @@
+Version of python used: python3
+Unit testing frmaework used: pytest
+
+To run the coffee machine program:
+ python main.py
